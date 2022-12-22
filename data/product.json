@@ -1,0 +1,84 @@
+{
+    "product": [
+        {
+            "id": "1",
+            "img": [
+                "/image/dress1--black.png",
+                "/image/dress1--brown.png",
+                "/image/dress1--grey.png",
+                "/image/dress1--skyBlue.png"
+            ],
+            "title": "Round Neck Pocket Long Sleeve Corduroy Autumn Winter Dress",
+            "price": "39.95",
+            "material": "50% fleece, 50% cotton",
+            "size": "small and xsmall",
+            "returnPolicy": "return accepted under 10 days",
+            "color": [
+                "cyan",
+                "black",
+                "brown",
+                "grey",
+                "skyBlue"
+            ]
+        },
+        {
+            "id": "2",
+            "img": [
+                "/image/dress2.png"
+            ],
+            "title": "Deeptown Lamb Wool Oversized Zip Up Solid Hoodies Vintage Plus Velvet Hooded Sweatshirts for Women Casual Loose Zipper Coat 2022",
+            "price": "65.50",
+            "material": "50% fleece, 50% cotton",
+            "size": "small and xsmall",
+            "returnPolicy": "return accepted under 10 days",
+            "color": [
+                "cyan",
+                "black",
+                "brown",
+                "grey",
+                "skyBlue"
+            ]
+        },
+        {
+            "id": "3",
+            "img": [
+                "/image/dress3.png"
+            ],
+            "title": "Warm Jacket Korean Simplicity Baggy Straight Coat Fashion Casual Female Puffer ",
+            "price": "50",
+            "material": "50% fleece, 50% cotton",
+            "size": "small and xsmall",
+            "returnPolicy": "return accepted under 10 days",
+            "color": [
+                "cyan",
+                "black",
+                "brown",
+                "grey",
+                "skyBlue"
+            ]
+        },
+        {
+            "id": "4",
+            "img": [
+                "/image/dress4.png"
+            ],
+            "title": "Winter Rainbow Woollen Overcoat Women Casual Plaid Long Coats Office",
+            "price": "59",
+            "material": "50% fleece, 50% cotton",
+            "size": "small and xsmall",
+            "returnPolicy": "return accepted under 10 days",
+            "color": [
+                "cyan",
+                "black",
+                "brown",
+                "grey",
+                "red"
+            ]
+        }
+        
+    ]
+}
+
+
+
+

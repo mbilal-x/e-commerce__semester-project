@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- page icon -->
+    <link rel="icon" type="image/png" href="/image/logo1.png">
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- font Awesome kit -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- my stylesheet -->
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <title>OFFGRID | <%= products.product[id].title %>
+    </title>
+</head>
+
+<body class="container">
+    <!-- nav -->
+    <%- include('partials/navbar.ejs') %>
+
+        <!-- main page -->
+        <main role="main" class="container">
+
+            <!-- product section -->
+            <div class="row product">
+                    <!-- first column -->
+                        <img class=" product__img img-fluid col col-lg-5 my-4" src=" <%= products.product[id].img[0]%> " alt="clothing article">
+
+                        <!-- second column -->
+                        <div class="col col-lg-7 my-4">
+                            <div class="primary-details">
+                                <p class="product__text">
+                                    <%= products.product[id].title %>
+                                </p>
+                                <p class="product__price">USD <%= products.product[id].price %>
+                                </p>
+                                <form class="cart-form my-4 px-2" action="/cart" method="get">
+                                    add to cart
+                                    <button id="btn--cart" type="submit" name="addToCart">+</button>
+                                </form>
+                            </div>
+                            <div class="secondary-details">
+                                <h4>Product Description:</h4>
+                                <p>
+                                <%= products.product[id].material %>
+                                <br><%= products.product[id].size %>
+                                <br><%= products.product[id].returnPolicy %>
+                            
+                                </p>
+                            </div>
+                            
+                            <div class="color-selection container-fluid">
+                                <h3>colors</h3>
+                                <div class="row">
+                                    <% for (var i = 0; i < products.product[id].img.length ;  i++ ) { %>
+                                        <img class="col-1 color-option"  src=" <%= products.product[id].img[i] %> " title="color <%= products.product[id].color[i] %>"> 
+                                    <% } %>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+
+
+        </main>
+<!-- footer -->
+<%- include('partials/footer.ejs') %>
